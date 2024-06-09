@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 48px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  &__route-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &__route-title {
+    color: rgba(0, 0, 0, 0.651);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  &__route-link {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    line-height: 32px;
+    color: #1b5bf7;
+  }
+  &__route-link:hover {
+    border-bottom: 2px solid #1b5bf7;
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

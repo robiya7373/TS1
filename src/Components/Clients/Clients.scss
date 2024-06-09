@@ -1,0 +1,127 @@
+.clients-section {
+  padding: 30px 0;
+}
+.clients-title {
+  max-width: 800px;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #1b5bf7;
+  margin-bottom: 54px;
+}
+
+.clients-wrapper {
+  &__slide-right {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 60px;
+    display: flex;
+    gap: 50px;
+  }
+  &__slide-left {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  &__slide-right-box {
+    // min-width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-shrink: 0;
+    animation-name: slide-right;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 200s;
+  }
+  &__slide-left-box {
+    // min-width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-shrink: 0;
+    animation-name: slide-left;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 200s;
+  }
+
+  &__slide-right__min-box {
+    left: 0;
+    top: 0;
+    display: inline-block;
+    position: relative;
+  }
+  &__slide-left__min-box {
+    left: 0;
+    top: 0;
+    display: inline-block;
+    position: relative;
+  }
+  &__slide-right-img-box {
+    padding: 0 20px;
+  }
+  &__slide-left-img-box {
+    padding: 0 20px;
+  }
+  &__slide-right-img {
+    width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border-radius: 24px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    transition: all 0.4s ease-in-out;
+    // margin-left: 50px;
+  }
+  &__slide-left-img {
+    width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    transition: all 0.4s ease-in-out;
+    // margin-left: 50px;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(100%, 0px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-100%, 0px);
+  }
+}
