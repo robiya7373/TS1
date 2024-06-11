@@ -20,11 +20,8 @@
   src: url("../src/Assets/Fonts/manrope-v15-latin-800.woff2") format("woff2");
 }
 
-:root {
-    /* --main-bg-color: #fff; */
-}
 
-/* GENERAL */
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -64,7 +61,7 @@ img {
   overflow: hidden;
 }
 
-/* CONTAINER */
+
 .container {
   max-width: 1180px;
   margin-right: auto;
